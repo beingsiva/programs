@@ -94,9 +94,6 @@ public class ExtentsReport1 {
 	}
 	
 	
-	
-	
-	
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException{
 		

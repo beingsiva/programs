@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataProvider.DataProvider1">
+      <class name="reportCreation.ExtentsReport1">
         <methods>
+          <include name="endReport"/>
+          <include name="freemCRMLogoTest"/>
+          <include name="setExtent"/>
           <include name="setup"/>
+          <include name="freeCrmTitleTest"/>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- dataProvider.DataProvider1 -->
+      </class> <!-- reportCreation.ExtentsReport1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

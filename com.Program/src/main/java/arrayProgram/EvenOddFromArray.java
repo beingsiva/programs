@@ -32,9 +32,8 @@ public class EvenOddFromArray {
 		
 		for(int i=0;i<evenNum.length;i++) {
 			System.out.println(oddNum[i]);
+			System.out.println(evenNum[i]);
 		}
-		//System.out.println(evenCount);
-		//System.out.println(oddCount);
 	}
 
 }

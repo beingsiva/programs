@@ -18,7 +18,8 @@ public class HtmlTableXpath {
 		
 		String expected= sc.nextLine();
 		String actual = driver.findElement(By.xpath("//span[text()='"+expected+ "']")).getText();
-		//System.out.println(actual);
+		System.out.println(actual);
+		
 		if(expected.equals(actual)) {
 		String siva = driver.findElement(By.xpath("//span[text()='"+expected+ "']/ancestor::tr")).getAttribute("rowindex");
 		System.out.println(siva);

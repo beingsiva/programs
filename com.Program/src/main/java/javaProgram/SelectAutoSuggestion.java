@@ -17,17 +17,22 @@ public class SelectAutoSuggestion {
 		driver.get("https://www.myntra.com/");
 		driver.manage().window().maximize();
 		String exp="Dresses Girls";
-		driver.findElement(By.className("desktop-searchBar")).sendKeys("dresses");
+		driver.findElement(By.xpath("//input[@class='desktop-searchBar']")).sendKeys("dresses");
 		Thread.sleep(2000);
+		//List<WebElement> we = driver.findElements
+		//(By.xpath("//div[@class='//ul[@class='desktop-group']/li"));
+		
 		List<WebElement> we = driver.findElements(By.xpath("//ul[@class='desktop-group']//child::*"));
+
 		System.out.println(we.size());
 
 		for (WebElement w : we) {
 
 			String s = w.getText();
-			System.out.println(w);
+			System.out.println(s);
 			if (s.equals(exp)) {
 				w.click();
+			
 			}
 		}
 
